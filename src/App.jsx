@@ -43,7 +43,7 @@ function App() {
       />
       
       {/* Primary Content Area */}
-      <main className="flex-grow max-w-7xl mx-auto w-full px-6 pt-24 pb-20">
+      <main className="flex-grow max-w-[1400px] mx-auto w-full px-6 pt-24 pb-20">
 
         {loading ? (
           <LoadingSpinner />
