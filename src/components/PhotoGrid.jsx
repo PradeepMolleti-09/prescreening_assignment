@@ -22,7 +22,7 @@ const PhotoGrid = ({ photos, favourites, toggleFavourite }) => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 py-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
       {photos.map((photo, index) => (
         <div key={photo.id} style={{ animationDelay: `${index * 50}ms` }}>
             <PhotoCard
