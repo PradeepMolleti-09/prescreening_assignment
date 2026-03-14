@@ -16,7 +16,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'glass py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/10 py-4 shadow-2xl' : 'bg-black/30 backdrop-blur-md py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-8">
         {/* Brand Section */}
         <div className="flex items-center gap-2 group cursor-pointer">
