@@ -3,7 +3,7 @@ import PhotoCard from './PhotoCard';
 
 /**
  * PhotoGrid: Container that handles the responsive layout logic.
- * Displays a 3-column grid on large screens for a more cinematic feel.
+ * Displays a 4-column grid on large screens for a more cinematic feel.
  */
 const PhotoGrid = ({ photos, favourites, toggleFavourite }) => {
   if (photos.length === 0) {
@@ -22,7 +22,7 @@ const PhotoGrid = ({ photos, favourites, toggleFavourite }) => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
       {photos.map((photo, index) => (
         <div key={photo.id} style={{ animationDelay: `${index * 50}ms` }}>
             <PhotoCard
